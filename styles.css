@@ -1,0 +1,85 @@
+* {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   height: 100%;
+}
+
+.wrapper {
+   position: relative;
+
+   width: 80%;
+   max-width: 1000px;
+   margin: 10% auto;
+}
+
+.layers {
+   position: relative;
+
+   width: 295px;
+   height: 550px;
+   margin: 0 auto;
+}
+
+.layers img {
+   position: absolute;
+
+   max-width: 100%;
+   max-height: 100%;
+
+   -webkit-transition: all 1.6s ease;
+   transition: all 1.6s ease;
+
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+}
+
+.layers img.layer-2 {
+   top: 20px;
+   left: 15px;
+
+   width: 264px;
+   height: 510px;
+}
+
+.layers img.layer-3 {
+   top: 30px;
+   left: 25px;
+
+   width: 244px;
+   height: 483px;
+}
+
+.layer-4 {
+   top: 120px;
+   left: 46px;
+
+   width: 188px;
+   height: 54px;
+}
+
+/* TRANFORMATIONS */
+
+.layers:hover img {
+   -webkit-transform: perspective(1000px) rotateX(60deg) rotateY(15deg) rotateZ(-30deg) translate(10px, -30px);
+   transform: perspective(1000px) rotateX(60deg) rotateY(15deg) rotateZ(-30deg) translate(10px, -30px);
+}
+
+.layers:hover .layer-2 {
+   -webkit-transform: perspective(1000px) rotateX(60deg) rotateY(15deg) rotateZ(-30deg) translate(10px, -30px) translateZ(40px);
+   transform: perspective(1000px) rotateX(60deg) rotateY(15deg) rotateZ(-30deg) translate(10px, -30px) translateZ(40px);
+}
+
+.layers:hover .layer-3 {
+   -webkit-transform: perspective(1000px) rotateX(60deg) rotateY(15deg) rotateZ(-30deg) translate(10px, -30px) translateZ(80px);
+   transform: perspective(1000px) rotateX(60deg) rotateY(15deg) rotateZ(-30deg) translate(10px, -30px) translateZ(80px);
+}
+
+.layers:hover .layer-4 {
+   -webkit-transform: perspective(1000px) rotateX(62deg) rotateY(19deg) rotateZ(-30deg) translate(-26px, -48px) translateZ(32px);
+   transform: perspective(1000px) rotateX(62deg) rotateY(19deg) rotateZ(-30deg) translate(-26px, -48px) translateZ(32px);
+}
