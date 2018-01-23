@@ -83,3 +83,70 @@ html {
    -webkit-transform: perspective(1000px) rotateX(62deg) rotateY(19deg) rotateZ(-30deg) translate(-26px, -48px) translateZ(32px);
    transform: perspective(1000px) rotateX(62deg) rotateY(19deg) rotateZ(-30deg) translate(-26px, -48px) translateZ(32px);
 }
+
+
+/* CSS 3 in 30 DAYS LOGO */
+
+.layers-2 {
+   margin: 10% auto;
+   position: relative;
+   width: 500px;
+   height: 500px;
+}
+
+.layers-2 img {
+   position: absolute;
+   -webkit-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+   -webkit-transition: all 1.6s ease;
+   transition: all 1.6s ease;
+}
+
+.circle {
+   width: 500px;
+   height: 500px;
+}
+
+.css3 {
+   width: 526px;
+   height: 262px;
+   top: 60px;
+   left: -15px;
+}
+
+.in-30-days {
+   width: 474px;
+   height: 202px;
+   top: 190px;
+   left: 29px;
+}
+
+.brad {
+   width: 152px;
+   height: 67px;
+   bottom: 50px;
+   left: 208px;
+}
+
+/* TRANFORMATIONS */
+
+.layers-2:hover img {
+   -webkit-transform: perspective(1000px) rotateX(45deg) rotateY(22deg) rotateZ(-25deg) translate(40px, -40px);
+   transform: perspective(1000px) rotateX(45deg) rotateY(22deg) rotateZ(-25deg) translate(40px, -40px);
+}
+
+.layers-2:hover .css3 {
+   -webkit-transform: perspective(1000px) rotateX(45deg) rotateY(30deg) rotateZ(-25deg) translate(10px, -40px) translateZ(30px);
+   transform: perspective(1000px) rotateX(45deg) rotateY(30deg) rotateZ(-25deg) translate(10px, -40px) translateZ(30px);
+}
+
+.layers-2:hover .in-30-days {
+   -webkit-transform: perspective(1000px) rotateX(45deg) rotateY(30deg) rotateZ(-30deg) translate(0px, 0px) translateZ(160px);
+   transform: perspective(1000px) rotateX(45deg) rotateY(30deg) rotateZ(-30deg) translate(0px, 0px) translateZ(160px);
+}
+
+.layers-2:hover .brad {
+   -webkit-transform: perspective(1000px) rotateX(33deg) rotateY(34deg) rotateZ(-28deg) translate(40px, -10px) translateZ(220px);
+   transform: perspective(1000px) rotateX(33deg) rotateY(34deg) rotateZ(-28deg) translate(40px, -10px) translateZ(220px);
+
+}
