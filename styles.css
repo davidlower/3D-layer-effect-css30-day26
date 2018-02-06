@@ -88,15 +88,12 @@ html {
 /* BOTTOM NAVIGATION */
 
 .navigation {
-   position: absolute;
-   bottom: 5%;
-   left: 50%;
-   transform: translateX(-50%);
+
    display: flex;
    align-items: flex-end;
    justify-content: center;
 
-   margin: 0 auto;
+   margin: 5% auto;
 
    font-size: 2rem;
 }
@@ -119,14 +116,4 @@ a {
 
 .navigation a:active {
    transform: translateY(1px);
-}
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 850px) and (orientation: landscape) {
-   .navigation {
-      position: relative;
-      margin: 0 auto 10%;
-   }
 }
